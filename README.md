@@ -1,5 +1,16 @@
-# dark-mode package
+# Dark Mode
 
-A short description of your package.
+Package for Atom Editor which allow to you switch to dark mode and light mode theme.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![Dark Mode](DarkMode640.gif)
+
+## How to use?
+Use shortcut:
+> ctrl + \`
+
+or in command palette choose `Dark Mode: Toggle`
+
+## Customization
+Go to the package config in Atom settings.
+
+You can also specify your own custom themes and regard this app as fast and easy theme switcher.
