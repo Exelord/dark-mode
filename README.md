@@ -4,6 +4,11 @@ Package for Atom Editor which allow you to switch to `dark mode` and `light mode
 
 ![Dark Mode](DarkMode640.gif)
 
+## Installation
+Run: `apm install dark-mode` or use Atom Package Manager in Atom settings.
+
+** After installation remember to restart Atom or run `Window: Reload` in command palette.**
+
 ## How to use?
 Use shortcut:
 > ctrl + \`
