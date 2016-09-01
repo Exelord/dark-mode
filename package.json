@@ -1,7 +1,7 @@
 {
   "name": "dark-mode",
   "main": "./lib/dark-mode",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Exelord",
   "description": "Switch between dark mode and light mode with just one shortcut.",
   "keywords": [
