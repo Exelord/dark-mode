@@ -2,7 +2,7 @@
 
 Package for Atom Editor which allow you to switch to `dark mode` and `light mode` theme.
 
-![Dark Mode](DarkMode640.gif)
+![Dark Mode](https://raw.githubusercontent.com/Exelord/dark-mode/master/DarkMode640.gif)
 
 ## Installation
 Run: `apm install dark-mode` or use Atom Package Manager in Atom settings.
