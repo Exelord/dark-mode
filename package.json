@@ -10,13 +10,13 @@
     "switch",
     "atom"
   ],
-  "activationCommands": {
-    "atom-workspace": "dark-mode:toggle"
-  },
+  "activationCommands": {},
   "repository": "https://github.com/exelord/dark-mode",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ambientlight": "^0.1.2"
+  }
 }
