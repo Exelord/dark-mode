@@ -17,6 +17,10 @@ describe('DarkMode', () => {
 		atom.packages.activatePackage('dark-mode');
 	});
 
+	afterEach(() => {
+		atom.packages.deactivatePackage('dark-mode');
+	});
+
 	describe('when the dark-mode:toggle event is triggered', () => {
 		it('changes modes', () => {
 			let currentTheme = atom.config.get('core.themes');
@@ -50,14 +54,12 @@ describe('DarkMode', () => {
 			expect(atom.config.get('core.themes')).toMatch(currentTheme);
 		});
 
-		it('call activate on switcher change', function() {
-			spyOn(DarkMode.ambientLight, 'activate');
-
+		it('changes ambientLight state after switch', function() {
 			atom.config.set('dark-mode.ambientLight', true);
-			expect(DarkMode.ambientLight.activate).toHaveBeenCalled();
+			expect(DarkMode.ambientLight.active).toEqual(true);
 
-			atom.config.set('dark-mode.ambientLightInterval', 2000);
-			expect(DarkMode.ambientLight.activate).toHaveBeenCalled();
+			atom.config.set('dark-mode.ambientLight', false);
+			expect(DarkMode.ambientLight.active).toEqual(false);
 		});
 	});
 });
