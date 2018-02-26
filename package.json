@@ -1,7 +1,7 @@
 {
   "name": "dark-mode",
   "main": "./lib/dark-mode",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "author": "Exelord",
   "description": "Automatically switch between dark mode and light mode thanks to your light sensor or just change your mood switching between your favorites themes.",
   "keywords": [
