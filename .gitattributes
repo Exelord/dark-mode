@@ -1,4 +1,4 @@
-* text=auto
+* text=auto eol=lf
 
 /spec export-ignore
 /.eslintrc.js export-ignore
