@@ -42,24 +42,4 @@ describe('DarkMode', () => {
       expect(atom.config.get('dark-mode.autoMode')).toMatch(false);
     });
   });
-
-  describe('ambient light', () => {
-    it('callbacks', () => {
-      let currentTheme = atom.config.get('core.themes');
-
-      DarkMode.onLight();
-      expect(atom.config.get('core.themes')).not.toMatch(currentTheme);
-
-      DarkMode.onDark();
-      expect(atom.config.get('core.themes')).toMatch(currentTheme);
-    });
-
-    it('changes ambientLight state after switch', function() {
-      atom.config.set('dark-mode.ambientLightSensor', true);
-      expect(DarkMode.ambientLightSensor.active).toEqual(true);
-
-      atom.config.set('dark-mode.ambientLightSensor', false);
-      expect(DarkMode.ambientLightSensor.active).toEqual(false);
-    });
-  });
 });
